@@ -4,4 +4,4 @@
 ![custom link tutorial](https://github.com/netolobo/OpeningLinkSwiftUI/assets/641469/42cdc1e7-63b2-4b46-97c8-367aba23c6d1)
 ![button link tutorial](https://github.com/netolobo/OpeningLinkSwiftUI/assets/641469/678331eb-8b97-4ea1-858a-73543c00773f)
 
-The tutorial about it can be read here: 
+The tutorial about it can be read here: https://medium.com/@desilio/how-to-open-a-link-in-safari-with-swiftui-1938e39545ca
