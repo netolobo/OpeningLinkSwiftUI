@@ -8,14 +8,36 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(\.openURL) var openLink
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        VStack(spacing: 40) {
+            
+            Link("Link", destination: URL(string: "https://www.apple.com/")!)
+            
+            Link(destination: URL(string: "https://www.apple.com/")!) {
+                HStack {
+                    Image(systemName: "swift")
+                    
+                    Text("Custom link")
+                    
+                }
+            }
+            .foregroundStyle(.orange)
+            
+            Button {
+                openLink(URL(string: "https://www.apple.com/")!)
+            } label: {
+                Text("Button link")
+                    .frame(width: 120, height: 60)
+                    .background(.purple)
+                    .foregroundStyle(.white)
+                    .fontWeight(.heavy)
+                    .fontDesign(.rounded)
+                    .clipShape(.capsule)
+            }
+            
         }
-        .padding()
     }
 }
 
